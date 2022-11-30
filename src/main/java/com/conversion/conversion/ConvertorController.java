@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ConvertorController {
 
     @GetMapping("/conversion")
-    public String conversionPage(Model model) {
-        model.addAttribute("conversion", new Convertor());
+    public String conversionPage() {
         return "conversion";
     }
 }
